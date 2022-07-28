@@ -1,0 +1,50 @@
+ex 00
+
+#include <stdio.h>
+int	main(void)
+{
+	char	s1[] = "";
+	char	s2[] = "";
+
+	printf("%d\n", ft_strcmp(s1, s2));
+	return (0);
+}
+
+ex01
+
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+    unsigned int n = 1;
+	char	s1[] = "aaa";
+	char	s2[] = "aaa";
+	n = strncmp(s1, s2, n);
+	printf("%d", n);
+	return (0);
+}
+
+ex02
+
+#include <stdio.h>
+int	main()
+{
+	char	src[] = "arrivee";
+	char	dest[20] = "depart";
+
+	printf("%s", ft_strcat(dest, src));
+	return (0);
+}
+
+ex03
+
+#include <stdio.h>
+int	main(void)
+{
+	char	src[] = "arrivee";
+	char	dest[20] = "depart";
+	unsigned int i = 5;
+
+	printf("%s", ft_strncat(dest, src, i));
+	return (0);
+}
